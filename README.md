@@ -1,11 +1,48 @@
-Project Overview
-This project implements a supervised machine learning classification approach to detect fraudulent credit card transactions.
-A Random Forest Ensemble Classifier is trained to perform binary classification on transaction data, categorizing each transaction as either legitimate (non-fraudulent) or fraudulent. The trained model is serialized (persisted) and used by a standalone prediction script to perform real-time inference on individual transaction records.
-Tech Stack
-Python – core programming language
-Pandas – data manipulation & preprocessing
-NumPy – numerical computation
-Scikit-learn – model implementation & evaluation metrics
-Random Forest (Ensemble Learning algorithm) – classification model
-Joblib – model serialization/deserialization (persistence)
-Jupyter Notebook – exploratory data analysis (EDA) & experimentation environment
+# Credit Card Fraud Detection
+
+A machine learning project that detects fraudulent credit card transactions using a Random Forest Classifier.
+
+## Project Overview
+
+This project uses supervised machine learning to classify credit card transactions as either legitimate or fraudulent.
+
+The trained Random Forest model is saved using Joblib and is used by the prediction script to classify a transaction.
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib
+- Jupyter Notebook
+
+## Machine Learning Model
+
+- Random Forest Classifier
+- Binary classification
+- Output: FRAUD or LEGITIMATE
+
+## Project Structure
+
+```text
+credit-card-fraud-detection/
+├── models/
+│   └── random_forest_fraud_model.pkl
+├── src/
+│   ├── fraud_detection.py
+│   └── predict_fraud.py
+├── .gitignore
+├── README.md
+└── requirements.txt
+
+## Features
+
+- Credit card fraud classification
+- Random Forest machine learning model
+- Saved trained model using Joblib
+- Transaction prediction using Python
+
+## Author
+
+Santhiya
