@@ -1,27 +1,22 @@
 # Credit Card Fraud Detection
 
-A machine learning project that detects fraudulent credit card transactions using a Random Forest Classifier.
-
 ## Project Overview
 
-This project uses supervised machine learning to classify credit card transactions as either legitimate or fraudulent.
-
-The trained Random Forest model is saved using Joblib and is used by the prediction script to classify a transaction.
+This project is a Machine Learning based Credit Card Fraud Detection system. It classifies credit card transactions as either **FRAUD** or **LEGITIMATE** using a Random Forest classification model.
 
 ## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Joblib
-- Jupyter Notebook
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Joblib
 
 ## Machine Learning Model
 
-- Random Forest Classifier
-- Binary classification
-- Output: FRAUD or LEGITIMATE
+A **Random Forest Classifier** is used to detect fraudulent credit card transactions.
+
+The trained model is saved using **Joblib** and used for predicting new transactions.
 
 ## Project Structure
 
@@ -35,34 +30,58 @@ credit-card-fraud-detection/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
 ## Features
 
-- Credit card fraud classification
-- Random Forest machine learning model
-- Saved trained model using Joblib
-- Transaction prediction using Python
+* Credit card fraud classification
+* Random Forest machine learning model
+* Saved trained model using Joblib
+* Transaction prediction using Python
 
 ## How to Run
 
-1. Install the required dependencies:
+### 1. Install the required dependencies
 
-   ```bash
-   pip install -r requirements.txt
-2. Make sure the dataset is available locally at:
-    data/creditcard.csv
-3. Run the prediction Script:
-    python src/predict_fraud.py
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Make sure the dataset is available locally
+
+```text
+data/creditcard.csv
+```
+
+### 3. Run the prediction script
+
+```bash
+python src/predict_fraud.py
+```
+
 The program will display whether the transaction is classified as:
+
+```text
 FRAUD
+```
+
+or
+
+```text
 LEGITIMATE
+```
+
 ## Example Output
 
 ```text
 Prediction: LEGITIMATE
-Important Note
+```
+
+## Important Note
+
 The credit card dataset is not included in this repository.
-The dataset is excluded using .gitignore to avoid uploading the dataset to GitHub.
+
+The dataset is excluded using `.gitignore` to avoid uploading the dataset to GitHub.
 
 ## Author
 
