@@ -43,6 +43,27 @@ credit-card-fraud-detection/
 - Saved trained model using Joblib
 - Transaction prediction using Python
 
+## How to Run
+
+1. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+2. Make sure the dataset is available locally at:
+    data/creditcard.csv
+3. Run the prediction Script:
+    python src/predict_fraud.py
+The program will display whether the transaction is classified as:
+FRAUD
+LEGITIMATE
+## Example Output
+
+```text
+Prediction: LEGITIMATE
+Important Note
+The credit card dataset is not included in this repository.
+The dataset is excluded using .gitignore to avoid uploading the dataset to GitHub.
+
 ## Author
 
 Santhiya
